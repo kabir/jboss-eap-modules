@@ -1,0 +1,8 @@
+schema_version: 1
+name: jboss.eap.play.property
+version: '1.0'
+description: EAP CD add a property via CLI.
+execute:
+- script: configure.sh
+  user: '185'
+

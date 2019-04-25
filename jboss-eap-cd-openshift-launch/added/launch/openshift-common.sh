@@ -32,5 +32,6 @@ CONFIGURE_SCRIPTS=(
   $JBOSS_HOME/bin/launch/mp-config.sh
   $JBOSS_HOME/bin/launch/tracing.sh
   $JBOSS_HOME/bin/launch/filters.sh
+  $JBOSS_HOME/bin/launch/play-property.sh
   /opt/run-java/proxy-options
 )

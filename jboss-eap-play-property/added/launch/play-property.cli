@@ -1,0 +1,10 @@
+embed-server --server-config=standalone-openshift.xml --timeout=30 --std-out=echo
+
+if (outcome != success) of /system-property=my-test:read-resource
+  echo Adding property my-test
+  /system-property=my-test:add(value=hello)
+else
+  echo my-test already exists
+end-if
+
+stop-embedded-server
